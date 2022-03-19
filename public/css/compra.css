@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+  }
+
+  body{
+    background-color: #181A27;
+
+  }
+
+/* Contenedores Principales*/
+
+.contenedor-genera{
+    background-color: #181A27;
+    min-height: 120%; 
+    width: 100%;
+    margin: 0;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+div.contenedor-genera button.btnregresar a{
+    line-height: 2.5;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #181A27;
+
+}
+
+div.contenedor-genera button.btnregresar{
+    top: 135px;
+    left: 50px;
+    position: absolute;
+    height: 35px;
+    width: 120px;
+    border-radius:10px;
+    background-color: #ECAE42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section.contenedor-imagen{
+    margin-top: 200px;
+    width: 370px;
+    height: 470px;
+    display: inline;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+section.contenedor-formulario{
+    width: 600px;
+    height: 470px;
+
+    position: relative;
+    display: block;
+    overflow: hidden;
+    display: inline-block;
+
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+
+
+/* Objetos de cada contenedor */
+
+/* Objetos deL contenedor imagen */
+section.contenedor-imagen img{
+    object-fit: cover;
+    object-position: center bottom; 
+    width: 370px;
+    height: 470px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Objetos del contenedor formulario */
+
+section.contenedor-formulario h1{
+    font-size: 39px;
+    color: #ECAE42;
+    text-align: left;
+    
+}
+
+section.contenedor-formulario form section.tipo-de-viaje{
+    margin-top: 30px;
+    width: 220px;
+    height: 350px;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+
+section.contenedor-formulario form section.recivo{
+    width: 250px;
+    height: 380px;
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+
+
+}
+
+
+
+section.contenedor-formulario form section.tipo-de-viaje h2, section.contenedor-formulario form section.recivo h2 {
+    font-size: 21px;
+    color: white;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje h2,section.contenedor-formulario form section.recivo div.caja-recibo h2{
+    text-align: center;
+    font-size: 19px;
+    color: #000000;
+    position: relative;
+    top: 8px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje{
+    width: 220px;
+    height: 240px;
+    background: #ECAE42;
+    border-radius: 20px;
+    position: absolute;
+    text-align: left;
+}
+
+
+
+
+section.contenedor-formulario form section.recivo div.caja-recibo{
+    width: 270px;
+    height: 342px;
+    background: #ECAE42;
+    border-radius: 20px;
+    position: absolute;
+    text-align: left;
+}
+
+
+section.contenedor-formulario p{
+    text-align: left;
+    font-size: 14px;
+    color: #494747;
+    margin-left: 12px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+section.contenedor-formulario  input{
+    width: 85px;
+    
+}
+
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje h2.detalleltlt{
+    top: 15px;
+    position: relative;
+}
+
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje p.viajelbl{
+    position: relative;
+    top: 9px;
+
+}
+section.contenedor-formulario form section.tipo-de-viaje select#select-fecha{
+    top: 9px;
+    position: relative;
+    width: 90px;
+    border-radius: 5px;
+    left: 3px;
+}
+
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje p.viajerbr{
+    position: relative;
+    left: 25px;
+
+}
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje p.horariolbl{
+    width: 70px;
+    height: 50px;
+    position: relative;
+    top: 33px;
+
+}
+
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje input#time-select{
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje p.cantilbl{
+    width: 70px;
+    height: 50px;
+    position: relative;
+    top: 40px;
+}
+
+
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje input#cant-select{
+    position: relative;
+    top: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+section.contenedor-formulario form section.recivo div.caja-recibo p{
+    width: 90px;
+    height: 50px;
+    position: relative; 
+}
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje p.lugarlbl{
+    top: 31px;
+    position: relative;
+    display: none;
+}
+
+section.contenedor-formulario form section.tipo-de-viaje div.caja-viaje input#lugarrbr{
+    top: 30px;
+    left: 25px;
+    position: relative;  
+    display: none;
+}
+
+
+
+
+
+
+section.contenedor-formulario form section.recivo div.caja-recibo h2.infotlt{
+    position: relative;
+    top: 26px;
+}
+
+section.contenedor-formulario form section.recivo div.caja-recibo p.nomblbl{
+    top: 16px;
+}
+
+section.contenedor-formulario form section.recivo div.caja-recibo p.nombrbr{
+    width: 90px;
+    height: 23px;
+    position: relative; 
+    color: black;
+    top: 6px;
+    left: 9px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+
+}
+section.contenedor-formulario form section.recivo div.caja-recibo p.fechalbl{
+    top: 24px;
+}
+
+
+section.contenedor-formulario form section.recivo div.caja-recibo #date-select{
+    top: 10px;
+    position: relative;
+    left: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 23px;
+}
+
+
+section.contenedor-formulario form section.recivo div.caja-recibo h2.preciotut{
+    top: 45px;
+
+}
+
+section.contenedor-formulario form section.recivo div.caja-recibo p.canbolbl{
+    top: -55px;
+    width: 100px;
+}
+
+section.contenedor-formulario form section.recivo div.caja-recibo label.lblfew{
+    height: 10px;
+}
+
+section.contenedor-formulario form section.recivo div.caja-recibo p.canrlbl{
+    width: 110px;
+    top: 15px;
+}
+
+section.contenedor-formulario form section.recivo div.caja-recibo #price-select{
+    top: 14px;
+    left: 2px;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    height: 23px;
+}
+
+
+section.contenedor-formulario form section.recivo div.caja-recibo p.totallbl{
+    top: 8px;
+}
+
+section.contenedor-formulario form section.recivo div.caja-recibo #pricee-total{
+    top: 9px;
+    left: 22px;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    height: 23px;
+}
+
+section.contenedor-formulario form section.recivo div.caja-recibo p.idlbl{
+    display: none;
+}
+
+section.contenedor-formulario form section.recivo div.caja-recibo input#usuariolbl{
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    height: 23px;
+    display: none;
+
+}
+
+
+section.contenedor-formulario section.tipo-de-viaje button{
+    top: 325px;
+    right: 45px;
+    position: absolute;
+    height: 45px;
+    width: 120px;
+    border-radius:10px;
+    cursor: pointer;
+}

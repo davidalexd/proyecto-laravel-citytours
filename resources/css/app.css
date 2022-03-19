@@ -1,0 +1,371 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background: rgba(255, 255, 255, 0);
+  overflow-y: scroll;
+  font-family: 'Bebas Neue', cursive;
+  
+}
+
+.menu{
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  position: fixed;
+  color: rgb(255, 255, 255);
+height: 110px;
+  width: 100%; 
+padding: 18px;
+-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+  box-shadow: 2px 2px 5px #07070742;
+  background: rgba(255, 255, 255, 0);
+
+}
+.active{
+  background-color: #20233a;
+  
+}
+.list-container{
+  
+ 
+  height: 100%;
+  
+  
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.list li{
+  
+  list-style: none;
+  background-color: #20233a;
+  margin:20px 20px;
+  padding: 8px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.menu .list-container .list li .activo{
+  
+  text-decoration: none;
+  margin: 0px 20px;
+  padding: 2px;
+  border-radius: 0px;
+  font-size: 16px;
+  color: inherit;
+-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s; 
+  transition: 0.1s; 
+  font-size: 20px;   
+}
+
+
+.menu .list-container .list li .activo:hover{
+  color: #ffffff;
+  border-bottom:2px solid#FFC768;
+  color: #FFC768;
+
+}
+.list li .lista{
+  color: white;
+  list-style: none;
+  padding: 25px;
+  height: 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  
+}
+.list li .lista:hover {
+  transition: all .3s ease;
+  color:#ec0000;
+}
+.back{
+  background: url(/img/turismo.jpg);
+  width: 100%;
+  height: 1080px;
+  background-size: cover;
+}
+/**Slider**/
+body section {
+  display: block;
+}
+
+.banner-inner-wrapper h1,
+.banner-inner-wrapper h2,
+.banner-inner-wrapper h3,
+.banner-inner-wrapper h4,
+.banner-inner-wrapper h5,
+.banner-inner-wrapper h6,
+.banner-inner-wrapper ul,
+.banner-inner-wrapper li{
+  margin: 0;
+  padding: 0;
+}
+.banner-inner-wrapper h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(235, 236, 255);
+}
+.banner-inner-wrapper h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.banner-inner-wrapper h3 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.banner-inner-wrapper h4 {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.banner-inner-wrapper p {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 3em;
+  line-height: 150%;
+  font-size: 50px;
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+}
+
+
+.learn-more-button a {
+  text-decoration: none;
+}
+
+.bg-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8));
+}
+.section-header {
+  padding-top: 5.625em;
+  text-align: center;
+}
+.section-header h3 {
+  margin-bottom: 0.5em;
+}
+.section-header .line-red {
+  margin: 2.5em auto 2.9375em auto;
+}
+.line-red {
+  display: block;
+  width: 4em;
+  height: 0.1875em;
+  margin: 0 auto;
+  background: #f38181;
+}
+/* Section-1 Styles */
+#section-1 {
+  height: 59em;
+  color: #fff;
+  background-color: #222;
+}
+#section-1 .content-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#section-1 .content-slider input {
+  display: none;
+}
+#section-1 .content-slider .slider {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+#section-1 .content-slider .slider .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.5s ease;
+}
+#section-1 .content-slider .slider .banner .banner-inner-wrapper {
+  height: 100%;
+  padding-top: 6em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.534));
+  box-sizing: border-box;
+}
+#section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
+  padding-bottom: 0.3em;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  font-size: 2.5em;
+  text-transform: none;
+}
+#section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
+  font-size: 6em;
+  line-height: 95%;
+}
+#section-1 .content-slider .slider .banner .banner-inner-wrapper .line {
+  display: block;
+  width: 4em;
+  height: 0.1875em;
+  margin: 2.5em auto;
+  background: #fff;
+}
+#section-1 .content-slider .slider .banner .banner-inner-wrapper .learn-more-button {
+  padding-bottom: 5em;
+  z-index: 15 !important;
+}
+#section-1 .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a {
+  padding: 0.5em 2em;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875em;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0.1875em solid #fff;
+}
+#section-1 .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover {
+  color: #9D9F59;
+  border-color: #9D9F59;
+  transition: 0.3s;
+}
+#section-1 .content-slider .slider #top-banner-1 {
+  background: url(https://wallpaperaccess.com/full/4736710.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#section-1 .content-slider .slider #top-banner-2 {
+  background: url(https://wallpapercave.com/wp/wp4813259.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#section-1 .content-slider .slider #top-banner-3 {
+  background: url(https://i.pinimg.com/originals/61/cc/b4/61ccb4842c843263bfbb13e3b77bfdab.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#section-1 .content-slider .slider #top-banner-4 {
+  background: url(https://wallpaperaccess.com/full/384642.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#section-1 .content-slider nav {
+  position: absolute;
+  bottom: 0.5em;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+}
+#section-1 .content-slider nav .controls {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+}
+#section-1 .content-slider nav .controls label {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  height: 3.1em;
+  overflow: hidden;
+  margin: 0 1em;
+  padding-top: 1em;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Alata', sans-serif;
+  font-size: 16px;
+  color: #f6eac5;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#section-1 .content-slider nav .controls label .progressbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #f6eac5;
+  z-index: 100;
+}
+#section-1 .content-slider nav .controls label .progressbar .progressbar-fill {
+  position: inherit;
+  width: inherit;
+  height: inherit;
+  margin-left: -100%;
+  background: #FFC768;
+}
+#section-1 .content-slider nav .controls label span {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+#section-1 .content-slider nav .controls label:hover {
+  color: #FFC768;
+}
+#section-1 .content-slider #banner1:checked ~ .slider #top-banner-1,
+#section-1 .content-slider #banner2:checked ~ .slider #top-banner-2,
+#section-1 .content-slider #banner3:checked ~ .slider #top-banner-3,
+#section-1 .content-slider #banner4:checked ~ .slider #top-banner-4 {
+  opacity: 1;
+  z-index: 1;
+}
+#section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1),
+#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2),
+#section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3),
+#section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) {
+  cursor: default;
+  color: #fff;
+  transition: all 0.5s;
+}
+#section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar,
+#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar,
+#section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar,
+#section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) .progressbar {
+  background: #fff;
+}
+#section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar-fill,
+#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar-fill,
+#section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar-fill,
+#section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) .progressbar-fill {
+  animation: progressBarFill 9s linear;
+}
+/* Animations */
+@keyframes progressBarFill {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+/**Slider**/
+
+/**PAGINA DESTINOS**/
+/**PAGINA DESTINOS**/

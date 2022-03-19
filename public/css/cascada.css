@@ -1,0 +1,318 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background-color: rgb(228, 228, 228);
+
+}
+
+/* Presentacion */
+section.cabecera{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+    
+}
+
+section.cabecera img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    display:  block;
+    width: 100%;
+    height: 100%;
+}
+
+section.cabecera h2{
+    font-size: 80px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 59vh;
+    color: white;
+
+
+    font-style: normal;
+
+    text-shadow: black 0.4em 0.20em 0.3em,black 0.0em 0.20em 0.8em,black 0.1em 0.1em 0.5em;;
+    transition: 0.8s;
+    position: relative;
+    
+}
+
+/* Descripcion */
+section.contenido{
+    text-align: center;
+    width: 100%;
+
+    width: 90%;
+
+    height: auto;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-left: 20px;
+    margin: auto;
+
+
+    
+}
+
+/* Contendeor de Subdestinos */
+section.contenido section.subdestinos-cont{
+
+    width: 550px;
+    height: 700px;
+
+    display: inline-block;
+    margin-bottom: 90px;
+    position: relative;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.slide {   
+    width: 550px;
+    height: 700px;
+    display: block;
+    position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.slide img { 
+    height: 700px;
+    width: 500px;
+    margin: auto;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 30px;
+    margin-top: 0;
+    cursor: pointer;
+    filter: blur(70%);
+}
+
+
+.carousel-inner{
+    border-radius: 30px;
+    display: absolute;
+    position: absolute;
+    
+}
+
+ol.carousel-indicators li{
+    cursor: pointer;
+} 
+
+a.carousel-control-prev{
+    display: flex;
+    position: absolute;
+}
+a.carousel-control-prev span{
+    color: black;
+}
+
+a.carousel-control-next{
+    display: flex;
+    position: absolute;   
+    color: black;
+}
+
+
+
+/* Boton de rotacion del Sitio Turistico */
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    
+}
+
+a.carousel-control-prev:hover{
+    background: #20233a;
+    border-radius: 30px;
+    transition: 1s;
+}
+a.carousel-control-next:hover{
+    background: #20233a;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+a.carousel-control-next,a.carousel-control-prev{
+    width: 80px;
+}
+
+div.carousel-item div.carousel-caption h5{
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+div.carousel-item div.carousel-caption p{
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+/* Contendeor de Descripcion */
+section.contenido section.descripcion{
+    width: 990px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+
+    margin-bottom: 90px;
+
+    overflow: hidden;
+  
+}
+
+section.contenido section.descripcion section.cont-letra{
+    text-align: center;
+   
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    position: relative;
+    display: block;
+    height: 170px;
+}
+
+section.contenido section.descripcion section.cont-letra p{
+    width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    
+}
+
+
+
+/* Contenedor de las tarjetas de Sitios Turisticos */
+
+section.contenido section.descripcion section.Sitios-Turisticos{
+    width: 990px;
+
+    position: relative;
+    display: block;
+    height: 500px;
+    text-align: center;
+
+}
+
+section.contenido section.descripcion section.Sitios-Turisticos h3{
+    font-family: 'Segoe UI', Tahoma;
+    font-size: 39px;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    color: black;
+   
+
+}
+
+/* Contenedor de las tarjetas de Sitios Turisticos */
+
+section.contenido section.descripcion section.Sitios-Turisticos section.cont-sitios{
+    width: 980px;
+    height: 420px;
+    text-align: center;
+    
+    overflow-y: scroll; 
+}
+
+/* Personalizado de Barra de Sitios Turisticos */
+section.cont-sitios::-webkit-scrollbar{
+    width: 15px;
+}
+
+section.cont-sitios::-webkit-scrollbar-track {
+    background: rgb(228, 228, 228);     
+    border-radius: 20px;      /* color of the tracking area */
+  }
+
+section.cont-sitios::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+section.cont-sitios::-webkit-scrollbar-thumb {
+    background-color: rgb(62, 62, 65);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(62, 62, 65);  /* creates padding around scroll thumb */
+  }
+
+
+
+/* Tarjetas De Sitios Turisticos */
+
+section.contenido section.descripcion section.Sitios-Turisticos section.cont-sitios div{
+    width: 260px;
+    height: 390px;
+    background-color: #000000;
+    margin-left: 20px;
+    margin-top: 17px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow-y: hidden;   
+    cursor: pointer;
+    transition: 1010ms;
+    position: relative;
+    overflow: hidden;
+}
+
+
+section.contenido section.descripcion section.Sitios-Turisticos section.cont-sitios div:hover{
+    box-shadow: 0 16px 22px rgba(0, 0, 0, 0.568);
+    transition: 1010ms;
+    transform: translateY(-13px);
+}
+
+
+section.contenido section.descripcion section.Sitios-Turisticos section.cont-sitios div img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+
+
+section.contenido section.descripcion section.Sitios-Turisticos section.cont-sitios div p{
+    display: flex;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    justify-content: center;
+    align-items: flex-end;
+
+    text-align: center;
+    font-size: 22px;
+    text-shadow: black 0.4em 0.20em 0.29em,black 0.0em 0.20em 0.8em,black 0.1em 0.1em 0.5em,black 0.1em 0.1em 0.5em;;
+    
+    background: rgba(0, 0, 0, 0.384);
+}
+
+section.contenido section.descripcion section.Sitios-Turisticos section.cont-sitios div p:hover{
+    background: rgba(0, 0, 0, 0);
+    transition: 1s;
+
+}
+.descripcion .cont-letra{
+text-align: center;
+
+}
